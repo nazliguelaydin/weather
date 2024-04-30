@@ -1,0 +1,18 @@
+{
+    "name": "nazliguelaydin/weather",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nazliguelaydin\\Weather\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nazligül Aydin",
+            "email": "naydin@schueler.hakzell.at"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
