@@ -13,9 +13,13 @@
             "email": "naydin@schueler.hakzell.at"
         }
     ],
+    "repositories": [{
+        "type": "git",
+        "url": "git@github.com:nazliguelaydin/weather.git"
+    }],
+
     "minimum-stability": "dev",
     "require": {
-        "guzzlehttp/guzzle": "^7.0",
-        "symfony/http-foundation": "^5.0"
+        "nazliguelaydin/weather":"-1.0"
     }
 }
