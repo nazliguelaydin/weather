@@ -20,6 +20,6 @@
 
     "minimum-stability": "dev",
     "require": {
-        "nazliguelaydin/weather":"-1.0"
+        "nazliguelaydin/weather": "1.0.0"
     }
 }
