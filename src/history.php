@@ -5,20 +5,21 @@ namespace Nazliguelaydin\Weather;
 
 class History
 {
-    private $days = [];
+    private $weatherData = [];
 
-    public function addDay(Day $day)
+    public function addWeatherData(Day $day)
     {
-        $this->days[$day->getDate()] = $day;
+        $this->weatherData= $day;
     }
 
-    public function getWeather($date)
+    public function getWeatherbyDate($date)
     {
-        if (array_key_exists($date, $this->days)) {
-            return $this->days[$date];
-        } else {
-            return null;
+        foreach ($this->weatherData as $weatherData) {
+            if ($weatherData->getDate() == $date) {
+                return $weatherData;
+            }
         }
+        return null; // Datum nicht gefunden
     }
 }
 
